@@ -1,0 +1,123 @@
+@keyframes floatText{
+    from {
+      transform: translateY(100%);
+      opacity: 1;
+    }
+    to {
+        transform: translateY(-200%); 
+        opacity: 1;
+    }
+}
+@keyframes opaciter{
+    0% {
+      opacity:0;
+      display: block;
+      
+    }
+    80%{
+
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+        display: block;
+        
+    }
+}
+@keyframes logo{
+    0%{
+        
+        opacity: 0;
+        width: 100%;
+        height: 100%;  
+        justify-content: center;
+       
+    }
+    10%{
+        opacity: 1;
+        width: 100%;
+        height: 100%;  
+        text-align: center;
+    }
+    80%{
+
+    opacity: 1;
+    width: 20%;
+    height: 20%; 
+}
+    100% {
+        opacity:0;
+        width: 20%;
+        height: 20%;  
+      
+    }
+}
+body{
+    background-image: url("star.jpg");
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: Arial, sans-serif;  
+}
+p{
+
+    text-align: justify;
+    color: rgb(199, 199, 55);
+    font-size: 2em;
+
+}
+
+.texte{
+    
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10em;
+    margin-left: 10em;
+    animation: floatText 1800s infinite linear;
+    animation-delay: 10s;
+    opacity: 0;
+    
+}
+h1{
+
+    color: rgb(206, 206, 8);
+    margin: 0;
+    font-size: 3em;
+}
+section{
+    transform: perspective(300px) rotateX(25deg);
+    transform-origin: 50% 100%;
+
+}
+.img{
+
+    position: fixed;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    animation: opaciter 5s;
+    opacity: 0;
+   
+    
+}
+.longtemps{
+    color: rgb(96, 205, 255);  
+}
+
+.logopng{
+
+    position: fixed;
+    margin-left: 45%;
+    margin-right: 20%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    animation-name: logo ;
+    animation-duration: 8s;
+    animation-delay: 5s;
+    opacity: 0;
+    transform: translateX(-35%);
+
+}
