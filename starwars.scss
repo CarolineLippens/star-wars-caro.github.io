@@ -1,6 +1,6 @@
 @keyframes floatText{
     from {
-      transform: translateY(100%);
+      transform: translateY(120%);
       opacity: 1;
 
     }
@@ -31,15 +31,18 @@
         
         opacity: 0;
         width: 100%;
-        height: 100%;  
-        justify-content: center;
+        height: 100%;
+        margin-left: 150px;  
+        
        
     }
     10%{
         opacity: 1;
         width: 100%;
         height: 100%;  
-        text-align: center;
+        margin-left: 150px;  
+      
+        
     }
     80%{
 
@@ -54,12 +57,15 @@
       
     }
 }
+
 body{
     background-image: url("star.jpg");
-    //overflow: hidden;
+    overflow: hidden;
     box-sizing: border-box;
     background-color: black;
     font-family: Arial, sans-serif;  
+
+    
 
 }
 p{
@@ -69,19 +75,23 @@ p{
     font-size: 2em;
 
 }
-
-.texte{
-    
+section{
     display: flex;
+
+    transform: perspective(300px) rotateX(25deg);
+    transform-origin: 50% 100%;
+    width: 80%;
+    margin-top: -1450px;
+    margin-left: 180px
+}
+.texte{
+    margin-top: -1450px;
     text-align: center;
-    flex-direction: column;
-    justify-content: center;
     margin-right: 10em;
     margin-left: 10em;
-    animation: floatText 1800s infinite linear;
-    animation-delay: 10s;
-    opacity: 0;
-    
+    animation: floatText 150s infinite linear;
+    animation-delay: 8s;
+    opacity: 0; 
 }
 h1{
 
@@ -89,17 +99,13 @@ h1{
     margin: 0;
     font-size: 3em;
 }
-section{
-    transform: perspective(300px) rotateX(25deg);
-    transform-origin: 50% 100%;
 
-}
 .img{
 
     position: fixed;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 20%;
+    margin-top: 1750px;
     margin-bottom: 20%;
     animation: opaciter 5s;
     opacity: 0;
@@ -115,8 +121,8 @@ section{
     position: fixed;
     margin-left: 45%;
     margin-right: 20%;
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin-top: 1750px;
+    margin-bottom: 80%;
     animation-name: logo ;
     animation-duration: 8s;
     animation-delay: 5s;
