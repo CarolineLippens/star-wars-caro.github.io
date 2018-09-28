@@ -2,10 +2,12 @@
     from {
       transform: translateY(100%);
       opacity: 1;
+
     }
     to {
         transform: translateY(-200%); 
         opacity: 1;
+
     }
 }
 @keyframes opaciter{
@@ -54,10 +56,11 @@
 }
 body{
     background-image: url("star.jpg");
-    overflow: hidden;
+    //overflow: hidden;
     box-sizing: border-box;
     background-color: black;
     font-family: Arial, sans-serif;  
+
 }
 p{
 
